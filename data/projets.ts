@@ -40,7 +40,7 @@ export const projets: Projet[] = [
         tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
         image: "/images/projects/porto.png",
         gallery: ["/images/projects/proj1.png", "/images/projects/proj2.png"],
-        demo: "https://claudiadev.vercel.app/",
+        demo: "https://claudinedev.vercel.app/",
         features: [
             "Design responsive et mode sombre",
             "Animations interactives",

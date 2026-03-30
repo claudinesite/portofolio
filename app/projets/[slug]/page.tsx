@@ -138,10 +138,7 @@ export default function ProjetDetails() {
                         transition={{ delay: 0.2 }}
                         className="flex flex-wrap items-center gap-6 mt-8 pt-8 border-t border-neutral-100 dark:border-neutral-900"
                     >
-                        <div className="flex items-center gap-2 text-sm text-neutral-500">
-                            <Calendar className="w-4 h-4" />
-                            <span>2024</span>
-                        </div>
+
                         <div className="flex items-center gap-2">
                             {projet.tech.slice(0, 4).map((t) => (
                                 <span
