@@ -12,13 +12,8 @@ body {
   color: #171717;
   line-height: 1.7;
   min-height: 100vh;
-  
-  /* TEST - Quadrillage TRÈS visible */
+  overflow-x: hidden;
   background-color: #fafafa;
-  background-image: 
-    linear-gradient(to right, red 2px, transparent 2px),
-    linear-gradient(to bottom, red 2px, transparent 2px);
-  background-size: 50px 50px;
 }
 
 

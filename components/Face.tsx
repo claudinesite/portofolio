@@ -66,7 +66,7 @@ export default function Face() {
   return (
     <div 
       ref={containerRef}
-      className="relative w-80 h-96 flex items-center justify-center"
+      className="relative w-[280px] h-[320px] sm:w-80 sm:h-96 flex items-center justify-center"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
@@ -94,7 +94,7 @@ export default function Face() {
           
           {/* Accolade gauche { */}
           <motion.span
-            className="text-[#00ff00] text-9xl font-bold select-none leading-none"
+            className="text-[#00ff00] text-7xl sm:text-9xl font-bold select-none leading-none"
             style={{ 
               textShadow: "0 0 30px rgba(0,255,0,0.6), 0 0 60px rgba(0,255,0,0.3)",
               fontFamily: "JetBrains Mono, monospace"
@@ -108,14 +108,14 @@ export default function Face() {
           </motion.span>
           
           {/* Zone du visage (yeux + bouche) */}
-          <div className="flex flex-col items-center gap-6 w-28">
+          <div className="flex flex-col items-center gap-4 sm:gap-6 w-24 sm:w-28">
             
             {/* Les yeux */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-6 sm:gap-8">
               {/* Œil gauche */}
-              <div className="relative w-12 h-12 bg-neutral-800 rounded-full flex items-center justify-center border-2 border-neutral-700 shadow-inner">
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 bg-neutral-800 rounded-full flex items-center justify-center border-2 border-neutral-700 shadow-inner">
                 <motion.div
-                  className="w-6 h-6 bg-[#00ff00] rounded-full relative"
+                  className="w-5 h-5 sm:w-6 sm:h-6 bg-[#00ff00] rounded-full relative"
                   style={{
                     x: leftEyeX,
                     y: leftEyeY,
@@ -123,14 +123,14 @@ export default function Face() {
                   }}
                 >
                   {/* Reflet */}
-                  <div className="absolute top-1 right-1 w-2 h-2 bg-white rounded-full opacity-90" />
+                  <div className="absolute top-1 right-1 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full opacity-90" />
                 </motion.div>
               </div>
               
               {/* Œil droit */}
-              <div className="relative w-12 h-12 bg-neutral-800 rounded-full flex items-center justify-center border-2 border-neutral-700 shadow-inner">
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 bg-neutral-800 rounded-full flex items-center justify-center border-2 border-neutral-700 shadow-inner">
                 <motion.div
-                  className="w-6 h-6 bg-[#00ff00] rounded-full relative"
+                  className="w-5 h-5 sm:w-6 sm:h-6 bg-[#00ff00] rounded-full relative"
                   style={{
                     x: rightEyeX,
                     y: rightEyeY,
@@ -138,14 +138,14 @@ export default function Face() {
                   }}
                 >
                   {/* Reflet */}
-                  <div className="absolute top-1 right-1 w-2 h-2 bg-white rounded-full opacity-90" />
+                  <div className="absolute top-1 right-1 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full opacity-90" />
                 </motion.div>
               </div>
             </div>
             
             {/* La bouche */}
             <motion.div
-              className="relative w-16 bg-neutral-800 rounded-full overflow-hidden border-2 border-neutral-700 flex items-center justify-center"
+              className="relative w-12 sm:w-16 bg-neutral-800 rounded-full overflow-hidden border-2 border-neutral-700 flex items-center justify-center"
               animate={{
                 height: 10 + mouthOpen * 32,
               }}
@@ -161,7 +161,7 @@ export default function Face() {
               
               {/* "Langue" ou effet intérieur */}
               <motion.div
-                className="absolute bottom-1 left-1/2 -translate-x-1/2 w-6 h-3 bg-red-400/70 rounded-t-full"
+                className="absolute bottom-1 left-1/2 -translate-x-1/2 w-4 sm:w-6 h-2 sm:h-3 bg-red-400/70 rounded-t-full"
                 animate={{
                   opacity: mouthOpen > 0.4 ? 1 : 0,
                   scale: mouthOpen > 0.4 ? 1 : 0.5,
@@ -172,7 +172,7 @@ export default function Face() {
           
           {/* Accolade droite } */}
           <motion.span
-            className="text-[#00ff00] text-9xl font-bold select-none leading-none"
+            className="text-[#00ff00] text-7xl sm:text-9xl font-bold select-none leading-none"
             style={{ 
               textShadow: "0 0 30px rgba(0,255,0,0.6), 0 0 60px rgba(0,255,0,0.3)",
               fontFamily: "JetBrains Mono, monospace"
@@ -187,44 +187,44 @@ export default function Face() {
         </div>
         
         {/* Infos en bas de la carte */}
-        <div className="absolute bottom-6 left-6 right-6">
+        <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="space-y-3"
+            className="space-y-2 sm:space-y-3"
           >
-            <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center justify-between text-xs sm:text-sm">
               <span className="text-neutral-500">Projets</span>
-              <span className="text-white font-semibold text-base">12+</span>
+              <span className="text-white font-semibold text-sm sm:text-base">12+</span>
             </div>
-            <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center justify-between text-xs sm:text-sm">
               <span className="text-neutral-500">Expérience</span>
-              <span className="text-white font-semibold text-base">4+ ans</span>
+              <span className="text-white font-semibold text-sm sm:text-base">4+ ans</span>
             </div>
             <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-neutral-700 to-transparent" />
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
+                <span className="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00ff00] opacity-75" />
-                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#00ff00]" />
+                  <span className="relative inline-flex h-2 sm:h-2.5 w-2 sm:w-2.5 rounded-full bg-[#00ff00]" />
                 </span>
-                <span className="text-neutral-400 text-sm">Open to work</span>
+                <span className="text-neutral-400 text-xs sm:text-sm">Open to work</span>
               </div>
             </div>
           </motion.div>
         </div>
         
         {/* Nom en haut */}
-        <div className="absolute top-6 left-6">
-          <h2 className="text-white text-2xl font-bold">Claudine</h2>
-          <p className="text-neutral-500 text-sm font-medium">Dev & QA Tester</p>
+        <div className="absolute top-4 sm:top-6 left-4 sm:left-6">
+          <h2 className="text-white text-xl sm:text-2xl font-bold">Claudine</h2>
+          <p className="text-neutral-500 text-xs sm:text-sm font-medium">Dev & QA Tester</p>
         </div>
       </motion.div>
       
       {/* Cartes arrière-plan */}
-      <div className="absolute top-4 -left-4 w-80 h-96 bg-neutral-200 rounded-3xl -z-10" />
-      <div className="absolute top-8 -left-8 w-80 h-96 bg-neutral-100 rounded-3xl -z-20" />
+      <div className="absolute top-2 sm:top-4 -left-2 sm:-left-4 w-full h-full bg-neutral-200 rounded-3xl -z-10" />
+      <div className="absolute top-4 sm:top-8 -left-4 sm:-left-8 w-full h-full bg-neutral-100 rounded-3xl -z-20" />
     </div>
   );
 }
