@@ -61,30 +61,38 @@ export default function Navbar() {
 
     // Écouter les changements du hash (#projets, #accueil, etc.)
     useEffect(() => {
-        const handleHashChange = () => {
+        const handleHashChange = (isInitial = false) => {
             const hash = window.location.hash.substring(1); // Enlever le #
             if (hash && tabs.some(t => t.id === hash)) {
-                setIsLoading(true);
-                setTimeout(() => {
+                if (isInitial) {
                     setActiveTab(hash);
-                    setIsLoading(false);
-                }, 400);
+                } else {
+                    setIsLoading(true);
+                    setTimeout(() => {
+                        setActiveTab(hash);
+                        setIsLoading(false);
+                    }, 400);
+                }
             } else if (!hash) {
-                // Si pas de hash, revenir à l'accueil
-                setIsLoading(true);
-                setTimeout(() => {
+                if (isInitial) {
                     setActiveTab("accueil");
-                    setIsLoading(false);
-                }, 400);
+                } else {
+                    setIsLoading(true);
+                    setTimeout(() => {
+                        setActiveTab("accueil");
+                        setIsLoading(false);
+                    }, 400);
+                }
             }
         };
 
-        // Vérifier le hash initial
-        handleHashChange();
+        // Vérifier le hash initial sans délai artificiel
+        handleHashChange(true);
 
         // Écouter les changements du hash
-        window.addEventListener("hashchange", handleHashChange);
-        return () => window.removeEventListener("hashchange", handleHashChange);
+        const onHashChange = () => handleHashChange(false);
+        window.addEventListener("hashchange", onHashChange);
+        return () => window.removeEventListener("hashchange", onHashChange);
     }, []);
 
     // Mettre à jour l'heure

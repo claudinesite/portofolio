@@ -19,8 +19,9 @@ import {
   SiMysql,
   SiGit, 
   SiPostman,
-  
+  SiDotnet,
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 import { VscAzureDevops } from "react-icons/vsc";
 import TfsIcon from "../icons/TfsIcon";
 
@@ -28,6 +29,8 @@ export default function Accueil() {
   const techStack = [
     { name: "HTML", icon: SiHtml5, color: "#E34F26" },
     { name: "CSS", icon: SiCss3, color: "#1572B6" },
+    { name: "C#", icon: TbBrandCSharp, color: "#239120" },
+    { name: ".NET", icon: SiDotnet, color: "#512BD4" },
     { name: "PHP", icon: SiPhp, color: "#777BB4" },
     { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
     { name: "Python", icon: SiPython, color: "#3776AB" },
@@ -264,7 +267,7 @@ export default function Accueil() {
   
   <div className="flex items-center gap-1">
     {[
-      { href: "#", icon: Github },
+      { href: "https://github.com/claudinesite", icon: Github },
       { href: "https://www.linkedin.com/in/claudine-aboki/", icon: Linkedin },
     ].map((social, index) => (
       <motion.a
