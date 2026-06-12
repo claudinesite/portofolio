@@ -50,23 +50,23 @@ export const projets: Projet[] = [
     },
     {
         id: 3,
-        slug: "gestion-stock-edithshop",
-        titre: "EdithShop – Stock & POS",
-        description: "Solution complète de gestion d’inventaire et point de vente (POS) intégré.",
-        longDescription: "EdithShop a évolué pour devenir une plateforme tout-en-un. En plus de la gestion de stock robuste, elle intègre désormais un système de point de vente (POS) performant avec impression de tickets, gestion des remises et suivi des sessions de vente.",
-        tech: ["Laravel", "FilamentPHP", "MySQL", "Tailwind CSS"],
-        image: "/images/projects/guide.png",
+        slug: "stockpilote",
+        titre: "StockPilote",
+        description: "Solution SaaS de gestion de stock et POS avec Laravel/FilamentPHP et application mobile React Native.",
+        longDescription: "StockPilote est un écosystème moderne de gestion de stock et de point de vente (POS). Il combine une application web puissante sous Laravel et FilamentPHP, un site SaaS d'acquisition clients, et une application mobile en React Native conçue spécifiquement pour le scan rapide des produits via l'appareil photo.",
+        tech: ["Laravel", "FilamentPHP", "React Native", "MySQL", "Tailwind CSS"],
+        image: "/images/projects/stockpilote.png",
         gallery: [
-            "/images/projects/edith.png",
-            "/images/projects/caisse.png",
+            "/images/projects/stockpilote.png",
+            "/images/projects/stockpilote_login.png"
         ],
-        demo: "https://stocks.edithshop.com",
+        demo: "https://www.stockpilote.shop/",
         features: [
-            "Point de Vente (POS) tactile et rapide",
-            "Gestion d'inventaire en temps réel avec alertes",
-            "Multi-dépôts et transferts de stock",
-            "Rapports de ventes et analyses de profitabilité",
-            "Gestion des sessions de caisse (X/Z reports)"
+            "Gestion de stock centralisée et point de vente (POS) complet",
+            "Application mobile compagnon React Native pour le scan de codes-barres",
+            "Interface d'administration intuitive développée avec FilamentPHP",
+            "Site vitrine et plateforme SaaS pour la gestion des abonnements",
+            "Suivi des ventes, rapports financiers et alertes de stock bas en temps réel"
         ]
     },
     {
