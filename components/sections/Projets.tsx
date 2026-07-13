@@ -52,17 +52,13 @@ export default function Projets() {
                                 )}
 
                                 {/* PRODUCTION BADGE */}
-                                <div className="absolute top-3 right-3">
-                                    {live ? (
+                                {live && (
+                                    <div className="absolute top-3 right-3">
                                         <span className="bg-[#00ff00] text-black font-medium text-xs px-3 py-1 rounded-full shadow-sm">
                                             Live
                                         </span>
-                                    ) : (
-                                        <span className="bg-neutral-800 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">
-                                            Bientôt
-                                        </span>
-                                    )}
-                                </div>
+                                    </div>
+                                )}
                             </Link>
 
                             {/* CONTENT */}

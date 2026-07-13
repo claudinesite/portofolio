@@ -88,38 +88,37 @@ export const projets: Projet[] = [
     },
     {
         id: 5,
-        slug: "propulse-saas-immobilier",
-        titre: "Propulse – SaaS Immobilier",
-        description: "Application multi-tenant de gestion de propriétés, locataires et baux.",
-        longDescription: "Propulse est un SaaS immobilier puissant conçu pour les gestionnaires de biens. Il utilise une architecture multi-tenant pour isoler les données de chaque client tout en partageant la même infrastructure.",
-        tech: ["Laravel", "FilamentPHP", "Multi-tenant", "PostgreSQL"],
-        image: "/images/projects/propulse.png",
-        gallery: ["/images/projects/propulse.png", "/images/projects/propulse.png"],
-        status: "En cours",
+        slug: "maya",
+        titre: "Maya",
+        description: "Application de prise de rendez-vous médicaux via assistant IA conversationnel.",
+        longDescription: "Maya est une application intelligente qui révolutionne la prise de rendez-vous médicaux. Grâce à un assistant IA conversationnel propulsé par Gemini, les patients peuvent réserver, modifier ou annuler leurs rendez-vous en langage naturel, simplifiant ainsi la gestion des plannings médicaux.",
+        tech: ["Laravel 13", "Vue 3", "Inertia v3", "Tailwind CSS v4", "Laravel AI SDK (Gemini)"],
+        image: "/images/projects/maya.png",
+        gallery: ["/images/projects/maya.png", "/images/projects/chat.png"],
         demo: null,
         features: [
-            "Architecture multi-tenant (un domaine par client)",
-            "Gestion automatisée des baux et loyers",
-            "Portail locataire",
-            "Tableaux de bord financiers"
+            "Prise de rendez-vous via assistant IA conversationnel",
+            "Reconnaissance du langage naturel avec Gemini",
+            "Gestion des disponibilités et plannings médicaux",
+            "Notifications et rappels automatiques"
         ]
     },
     {
         id: 6,
-        slug: "yumyum-pos",
-        titre: "YumYum POS",
-        description: "Système de point de vente pour restaurant avec gestion des commandes.",
-        longDescription: "Un POS moderne et tactile conçu pour l'industrie de la restauration. Rapidité, simplicité et efficacité pour la prise de commande et la gestion des tables.",
+        slug: "axion",
+        titre: "Axion",
+        description: "Application de gestion de projet et de timesheet pour équipes.",
+        longDescription: "Axion est une solution complète de gestion de projet et de suivi du temps. Elle permet aux équipes de planifier leurs tâches, suivre le temps passé, générer des rapports et collaborer efficacement. L'interface moderne et réactive offre une expérience utilisateur fluide.",
         tech: ["Laravel", "Vue.js", "Inertia", "Tailwind CSS"],
-        image: "/images/projects/yumyum-pos.png",
-        gallery: ["/images/projects/yumyum-pos.png", "/images/projects/yumyum-pos.png"],
-        status: "En cours",
+        image: "/images/projects/project.png",
+        gallery: ["/images/projects/tasks.png", "/images/projects/timeentry.png"],
+        status: "",
         demo: null,
         features: [
-            "Interface tactile optimisée",
-            "Gestion des plans de table",
-            "Impression de tickets cuisine",
-            "Statistiques de vente quotidiennes"
+            "Gestion de projets, tâches et jalons",
+            "Saisie et validation de timesheet",
+            "Rapports et tableaux de bord",
+            "Gestion des utilisateurs et rôles"
         ]
     },
 ];

@@ -4,6 +4,15 @@ import { Code, Shield, TestTube, GraduationCap, Briefcase, Calendar, Database, U
 
 const experiences = [
   {
+    annee: "Janvier 2025 - Présent",
+    titre: "Développeuse Web Indépendante & Projets Numériques",
+    entreprise: "Moncton, N.-B.",
+    description: "Concevoir et développer des sites web et applications web responsives pour des projets personnels et freelance. Créer des interfaces utilisateur modernes axées sur l'expérience utilisateur (UX) et l'accessibilité. Produire du contenu web, de la documentation technique et des présentations de projets. Gérer la planification des projets, l'implémentation des fonctionnalités, les tests et les améliorations continues. Maintenir un portfolio en ligne présentant les projets réalisés et l'expertise technique.",
+    technologies: ["Next.js", "Laravel", "Vue.js", "UI/UX", "SEO"],
+    icon: Code,
+    couleur: "#00ff00",
+  },
+  {
     annee: "Mai 2025 - Présent",
     titre: "Bénévole - Projet communautaire",
     entreprise: "Civic Tech – Moncton, N.-B.",
