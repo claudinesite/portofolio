@@ -209,4 +209,25 @@ export const projets: Projet[] = [
             "FAQ et appel à l'action vers un audit stratégique"
         ]
     },
+    {
+        id: 11,
+        slug: "le-petit-bleu",
+        titre: "Le Petit Bleu",
+        categorie: "Landing page",
+        description: "Landing page éditoriale pour une donuterie artisanale de Moncton, entre identité gourmande, menu et commandes.",
+        longDescription: "Le Petit Bleu présente une donuterie artisanale de Moncton à travers une identité visuelle colorée et généreuse. L'expérience raconte l'histoire de la marque, détaille les donuts et cafés de spécialité, valorise les offres pour événements et guide les visiteurs vers la commande, Instagram ou la boutique physique.",
+        tech: ["Next.js", "React", "Responsive Design", "Internationalisation", "Animations"],
+        image: "/images/projects/lepetitbleu.png",
+        gallery: [
+            "/images/projects/lepetitbleu.png",
+            "/images/projects/lepetitbleu-detail.png"
+        ],
+        demo: "https://lepetitbleu.vercel.app/",
+        features: [
+            "Hero immersif centré sur l'identité de la donuterie",
+            "Menu complet de donuts artisanaux et cafés de spécialité",
+            "Présentation des commandes personnalisées pour événements",
+            "Navigation bilingue et informations pratiques pour la boutique de Moncton"
+        ]
+    },
 ];
