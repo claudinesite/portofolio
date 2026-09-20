@@ -193,20 +193,20 @@ export const projets: Projet[] = [
     },
     {
         id: 10,
-        slug: "sitegrow",
-        titre: "Sitegrow",
+        slug: "dupliclean",
+        titre: "DupliClean",
         categorie: "Landing page",
-        description: "Landing page d'agence dédiée au SEO, au GEO et à la génération de prospects à l'ère de l'IA.",
-        longDescription: "Sitegrow présente une offre de visibilité pensée pour Google et les moteurs de recherche génératifs comme ChatGPT, Gemini, Perplexity et Claude. La page explique la complémentarité entre SEO et GEO, détaille les expertises de l'agence et dirige les visiteurs vers un audit stratégique.",
-        tech: ["Next.js", "React", "SEO & GEO", "Responsive Design", "GPT-5.6"],
-        image: "/images/projects/sitegrow.png",
-        gallery: ["/images/projects/sitegrow.png"],
-        demo: "https://demo-sitegrow.vercel.app/",
+        description: "Site de présentation de DupliClean, une application Android pour repérer les doublons et libérer de l’espace.",
+        longDescription: "DupliClean aide à repérer les doublons exacts, les photos similaires, les fichiers volumineux et les captures d’écran sur Android, OneDrive et Google Drive. Le site présente les fonctionnalités, les étapes d’analyse et la gestion des données dans un univers visuel chaleureux. L’utilisateur choisit les fichiers et confirme chaque suppression.",
+        tech: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "Decap CMS"],
+        image: "/images/projects/dupliclean.png",
+        gallery: ["/images/projects/dupliclean.png"],
+        demo: "https://dupliclean.ca/",
         features: [
-            "Positionnement clair autour du SEO et de la recherche générative",
-            "Présentation des offres d'audit, SEO, GEO et accompagnement",
-            "Mise en avant des marques clientes et des bénéfices",
-            "FAQ et appel à l'action vers un audit stratégique"
+            "Présentation des doublons, photos similaires et fichiers à trier",
+            "Parcours d’analyse sur Android, OneDrive et Google Drive",
+            "Design responsive et animations de circuits et d’arcs",
+            "Contenus administrables, FAQ et informations sur la confidentialité"
         ]
     },
     {
