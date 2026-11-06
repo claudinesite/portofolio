@@ -230,4 +230,26 @@ export const projets: Projet[] = [
             "Navigation bilingue et informations pratiques pour la boutique de Moncton"
         ]
     },
+    {
+        id: 12,
+        slug: "gratte-moi-le-dos",
+        titre: "Gratte moi le dos",
+        categorie: "Projet créatif",
+        description: "Expérience publicitaire interactive autour d’un t-shirt à coordonnées pour demander exactement où gratter.",
+        longDescription: "Gratte moi le dos est une identité créative présentée par Ryan et Claudine dans le cadre d’un projet publicitaire. Le site transforme un geste complice en interface : une grille imprimée sur le t-shirt permet de choisir une coordonnée, de C-4 à J-10, et de guider la personne qui gratte le dos.",
+        tech: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+        image: "/images/projects/gratte-moi-le-dos.webp",
+        gallery: [
+            "/images/projects/gratte-moi-le-dos.webp",
+            "/images/projects/gratte-moi-le-dos-product.webp",
+            "/images/projects/gratte-moi-le-dos-shirt.webp"
+        ],
+        demo: "https://grattemoiledos.vercel.app/",
+        features: [
+            "Grille interactive de A à J et de 1 à 10",
+            "Coordonnée sélectionnée et annoncée instantanément",
+            "Direction artistique éditoriale inspirée des lookbooks indépendants",
+            "Interface responsive pensée pour une démonstration rapide"
+        ]
+    },
 ];
