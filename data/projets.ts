@@ -16,6 +16,28 @@ export interface Projet {
 
 export const projets: Projet[] = [
     {
+        id: 13,
+        slug: "mosaique",
+        titre: "Mosaïque",
+        categorie: "Landing page",
+        description: "Le site de mon studio web indépendant, où je présente mes réalisations et ma façon de créer des sites sur mesure.",
+        longDescription: "J’ai conçu Mosaïque pour que les visiteurs puissent explorer mes projets avant de me confier le leur. Depuis la galerie, ils peuvent agrandir chaque capture pour examiner les détails. Un formulaire permet de décrire une idée ou une refonte, et un appel découverte peut être réservé directement en ligne.",
+        tech: ["JavaScript", "GSAP", "HTML", "CSS"],
+        image: "/images/projects/mosaique.jpg",
+        gallery: [
+            "/images/projects/mosaique.jpg",
+            "/images/projects/mosaique-travaux.jpg"
+        ],
+        demo: "https://mosaique-murex.vercel.app/",
+        github: "https://github.com/claudinesite/mosaique",
+        features: [
+            "Galerie défilante avec agrandissement des captures et navigation au clavier",
+            "Animations au défilement qui tiennent compte des préférences de mouvement",
+            "Réservation d’un appel découverte avec Calendly",
+            "Réception des demandes de projet par courriel via Web3Forms"
+        ]
+    },
+    {
         id: 1,
         slug: "doc-emploi",
         titre: "DocEmploi",
